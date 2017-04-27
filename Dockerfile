@@ -12,5 +12,6 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get -y upgrade && apt-get install -y slurm iperf tshark nano iproute2
 RUN apt-get install -y net-tools
 RUN mkdir /etc/network
+RUN apt-get install -y iputils-*
 
 ENTRYPOINT bash
