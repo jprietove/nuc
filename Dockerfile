@@ -13,5 +13,6 @@ RUN apt-get update && apt-get -y upgrade && apt-get install -y slurm iperf tshar
 RUN apt-get install -y net-tools
 RUN mkdir /etc/network
 RUN apt-get install -y iputils-* mtr
+RUN apt-get install -y  freeradius-utils
 
 ENTRYPOINT bash
