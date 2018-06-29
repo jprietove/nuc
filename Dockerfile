@@ -1,6 +1,6 @@
 # NUC Network Utilities Container
 # For use en GNS3 as a Computer with network utilities
-FROM ubuntu:xenial
+FROM ubuntu:bionix
 MAINTAINER Javier Prieto <javier.prieto.edu@juntadeandalucia.es>
 
 LABEL Title="NUC Network Utilities Container" \
@@ -9,10 +9,8 @@ LABEL Title="NUC Network Utilities Container" \
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get -y upgrade && apt-get install -y slurm iperf tshark nano iproute2
-RUN apt-get install -y net-tools
+RUN apt-get update && apt-get install -y slurm iperf tshark nano iproute2 net-tools iputils-* mtr freeradius-utils
+
 RUN mkdir /etc/network
-RUN apt-get install -y iputils-* mtr
-RUN apt-get install -y  freeradius-utils
 
 ENTRYPOINT bash
