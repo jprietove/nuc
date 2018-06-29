@@ -1,6 +1,6 @@
 # NUC Network Utilities Container
 # For use en GNS3 as a Computer with network utilities
-FROM ubuntu:bionix
+FROM ubuntu:bionic
 MAINTAINER Javier Prieto <javier.prieto.edu@juntadeandalucia.es>
 
 LABEL Title="NUC Network Utilities Container" \
