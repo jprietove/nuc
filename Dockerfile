@@ -11,6 +11,4 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y slurm iperf tshark nano iproute2 net-tools iputils-* mtr freeradius-utils
 
-RUN mkdir /etc/network
-
 ENTRYPOINT bash
