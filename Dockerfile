@@ -9,6 +9,6 @@ LABEL Title="NUC Network Utilities Container" \
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y slurm iperf tshark nano iproute2 net-tools iputils-* mtr freeradius-utils
+RUN apt-get update && apt-get install -y slurm iperf tshark nano iproute2 net-tools iputils-* mtr freeradius-utils ipv6toolkit
 
 ENTRYPOINT bash
