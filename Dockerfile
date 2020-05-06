@@ -12,4 +12,6 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y slurm iperf tshark nano iproute2 net-tools iputils-* mtr freeradius-utils ipv6toolkit
 
 RUN apt-get install -y ftp netcat
+
+RUN apt-get install -y iperf3
 ENTRYPOINT bash
