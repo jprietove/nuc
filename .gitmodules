@@ -1,0 +1,3 @@
+[submodule "jprietove/nuc"]
+	path = jprietove/nuc
+	url = git@github.com:jprietove/nuc
