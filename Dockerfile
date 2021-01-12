@@ -1,6 +1,6 @@
 # Ubuntu-Focak Ubuntu based Container
 # For use in GNS3 as a Computer with network utilities
-FROM ubuntu:focal
+FROM ubuntu:bionic
 MAINTAINER Javier Prieto <javier.prieto.edu@juntadeandalucia.es>
 
 LABEL Title="Ubuntu Focal" \
